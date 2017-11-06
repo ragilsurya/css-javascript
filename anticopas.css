@@ -1,0 +1,15 @@
+/* ---BangGhiel Kode Agar Blog Tidak Bisa Di Copy Paste---*/
+<span style="color: red;">.post-outer {
+-webkit-touch-callout:none;
+-khtml-user-select:none;
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+}
+/* ---BangGhiel Kode Agar Bagian tertentu Bisa Di Copy Paste---*/
+.post blockquote,.post pre,.post code{
+  -webkit-touch-callout:text;
+  -khtml-user-select:text;
+  -webkit-user-select:text;
+  -moz-user-select:text;
+  -ms-user-select:text;
