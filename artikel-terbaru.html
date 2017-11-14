@@ -1,32 +1,18 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style scoped='' type='text/css'>
-/* Recent Post Navigasi */
-#recentpostnav{border:1px solid #585858;width:100%;margin:0 auto}
-#recentpostsae{margin:0}
-.recentpostel{background:#fff;display:block;border:1px solid #ddd;margin:5px 0;padding:10px;height:79px}
-.recentpostel img{background:#fff;padding:4px;float:left;height:70px;margin-right:8px;width:70px;border:1px solid #ddd}
-.recentpostel h6,.recentpostel h6 a{text-decoration:none;font-size:13px!important;font-weight:700!important;margin:0;color:#111}
-.recentpostel:hover{background-color:#fefefe}
-.recentpostel p{font-size:12px;text-align:left;color:#555;line-height:normal;margin:5px 0}
-#recentpostload{color:#888;font-family:Tahoma;font-size:100px;letter-spacing:-10px;text-align:center;text-shadow:-5px 0 1px #444;background:url(http://2.bp.blogspot.com/-60aISBQLRY0/VFBMqzLfzGI/AAAAAAAABgM/GInmVTvEzkc/s1600/loader.gif) 50% 50% no-repeat #fff;height:470px;border:1px solid #ddd}
-#recentpostnavfeed{border:1px solid #ddd;color:#bbb;font-family:Verdana;font-size:12px;text-align:center;margin:0}
-#recentpostnavfeed:hover{background-color:#fefefe}
-#recentpostnavfeed a{color:#141414!important;font-family:Tahoma!important;font-size:12px!important;font-weight:400!important;display:block;padding:5px 10px}
-#recentpostnavfeed span{padding:5px 10px}
-#recentpostnavfeed .next{float:right}
-#recentpostnavfeed .previous{float:left}
-#recentpostnavfeed .home{text-align:center}
-#recentpostnavfeed a:hover,#recentpostnavfeed span.noactived{color:transparant!important}
+<style scoped="" type="text/css">
+ul.rcentside *{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box }ul.rcentside{font-size:11px}ul.rcentside,ul.rcentside li{margin:0;padding:0;list-style:none;position:relative }ul.rcentside{width:100%;height:500px }ul.rcentside li{height:24.5%;position:absolute;padding:0;width:49.5%;float:left;overflow:hidden;display:none }ul.rcentside li:nth-child(1),ul.rcentside li:nth-child(2),ul.rcentside li:nth-child(3),ul.rcentside li:nth-child(4){display:block }ul.rcentside img{border:0;width:100%;height:auto}ul.rcentside li:nth-child(1){width:100%;height:49.5%;margin:0 0 2px;left:0;top:0 }ul.rcentside li:nth-child(2){left:0;top:50% }ul.rcentside li:nth-child(3){left:50.5%;top:50% }ul.rcentside li:nth-child(4){width:100%;left:0;top:75% }ul.rcentside .overlayx,ul.rcentside li{transition:all .4s ease-in-out }ul.rcentside .overlayx{width:100%;height:100%;position:absolute;z-index:2;left:0;top:0;opacity:.6;background-image:url(http://1.bp.blogspot.com/-FtnGJHMcWH8/UIV3IE-aaJI/AAAAAAAAGHs/WvLypnWxg5A/s1600/linebg-fade.png);background-position:50% 50%;background-repeat:repeat-x }ul.rcentside .overlayx,ul.rcentside img{margin:3px}ul.rcentside li:nth-child(1).overlayx{background-position:50% 25% }ul.rcentside .overlayx:hover{opacity:.1 }ul.rcentside h4{position:absolute;bottom:10px;left:10px;right:10px;z-index:2;color:#fff;font-weight:700;margin:0;padding:10px;line-height:1.5em;font-weight:normal;overflow:hidden;transition:all .3s}ul.rcentside li:hover h4{bottom:30px}ul.rcentside li:nth-child(1)h4,ul.rcentside li:nth-child(4)h4{font-size:150% }ul.rcentside .label_text{position:absolute;bottom:0;left:20px;z-index:2;color:#fff;font-size:90%;opacity:0;transition:all .3s}ul.rcentside li:hover .label_text{bottom:20px;opacity:1}ul.rcentside li:nth-child(2).autname,ul.rcentside li:nth-child(3).autname{display:none }.buttons{margin:5px 0 0 }.buttons a{display:inline-block;text-indent:-9999px;width:15px;height:25px;position:relative }.buttons a::before{content:"";width:0;height:0;border-width:8px 7px;border-style:solid;border-color:transparent #535353 transparent transparent;position:absolute;top:50%;margin-top:-8px;margin-left:-10px;left:50% }.buttons a.nextx::before{border-color:transparent transparent transparent #535353;margin-left:-3px }
 </style>
+<div id="featuredpostside"></div>
 <script type='text/javascript'>
+function FeaturedPostSide(a){(function(e){var h={blogURL:"",MaxPost:4,idcontaint:"",ImageSize:100,interval:5000,autoplay:false,loadingClass:"loadingxx",pBlank:"http://1.bp.blogspot.com/-htG7vy9vIAA/Tp0KrMUdoWI/AAAAAAAABAU/e7XkFtErqsU/s1600/grey.gif",MonthNames:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],tagName:false};h=e.extend({},h,a);var g=e(h.idcontaint);var d=h.MaxPost*200;g.html('<div class="sliderx"><ul class="rcentside"></ul></div><div class="buttons"><a href="#" class="prevx">prev</a><a href="#" class="nextx">next</a></div>');var f=function(w){var q,k,m,u,x,p,t,v,r,l="",s=w.feed.entry;for(var o=0;o<s.length;o++){for(var n=0;n<s[o].link.length;n++){if(s[o].link[n].rel=="alternate"){q=s[o].link[n].href;break}}if("media$thumbnail" in s[o]){u=s[o].media$thumbnail.url.replace(/\/s[0-9]+\-c/g,"/s"+h.ImageSize+"-c")}else{u=h.pBlank.replace(/\/s[0-9]+(\-c|\/)/,"/s"+h.ImageSize+"$1")}k=s[o].title.$t;r=s[o].published.$t.substring(0,10);m=s[o].author[0].name.$t;x=r.substring(0,4);p=r.substring(5,7);t=r.substring(8,10);v=h.MonthNames[parseInt(p,10)-1];l+='<li><a target="_blank" href="'+q+'"><div class="overlayx"></div><img class="random" src="'+u+'"/><h4>'+k+'</h4></a><div class="label_text"><span class="date"><span class="dd">'+t+'</span> <span class="dm">'+v+'</span> <span class="dy">'+x+'</span></span> <span class="autname">'+m+"</span></div></li>"}e("ul",g).append(l).addClass(h.loadingClass)};var c=function(){e(h.idcontaint+" .nextx").click()};var b=function(){e.get((h.blogURL===""?window.location.protocol+"//"+window.location.host:h.blogURL)+"/feeds/posts/summary"+(h.tagName===false?"":"/-/"+h.tagName)+"?max-results="+h.MaxPost+"&orderby=published&alt=json-in-script",f,"jsonp");setTimeout(function(){e(h.idcontaint+" .prevx").click(function(){e(h.idcontaint+" .sliderx li:first").before(e(h.idcontaint+" .sliderx li:last"));return false});e(h.idcontaint+" .nextx").click(function(){e(h.idcontaint+" .sliderx li:last").after(e(h.idcontaint+" .sliderx li:first"));return false});if(h.autoplay){var i=h.interval;var j=setInterval(c,i);e(h.idcontaint+" .sliderx li:first").before(e(h.idcontaint+" .sliderx li:last"));e(h.idcontaint+" .sliderx").hover(function(){clearInterval(j)},function(){j=setInterval(c,i)})}e("ul",g).removeClass(h.loadingClass)},d)};e(document).ready(b)})(jQuery)};
 //<![CDATA[
-    var numfeed = 5;
-    var startfeed = 0;
-    var urlblog = "https://masghiel.blogspot.com";
-    var charac = 40;
-    var urlprevious, urlnext;
-function arlinafeed(e,t){for(var n=e.split("<"),r=0;r<n.length;r++)-1!=n[r].indexOf(">")&&(n[r]=n[r].substring(n[r].indexOf(">")+1,n[r].length));return n=n.join(""),n=n.substring(0,t-1)}function showrecentpostsae(e){var t,n,r,a,i,s="";urlprevious="",urlnext="";for(var l=0;l<e.feed.link.length;l++)"previous"==e.feed.link[l].rel&&(urlprevious=e.feed.link[l].href),"next"==e.feed.link[l].rel&&(urlnext=e.feed.link[l].href);for(var d=0;d<numfeed&&d!=e.feed.entry.length;d++){t=e.feed.entry[d],n=t.title.$t;for(var l=0;l<t.link.length;l++)if("alternate"==t.link[l].rel){r=t.link[l].href;break}i="content"in t?t.content.$t:"summary"in t?t.summary.$t:"",a="media$thumbnail"in t?t.media$thumbnail.url:"http://3.bp.blogspot.com/-BHuXHny1kOk/VXrkSyxKCjI/AAAAAAAACas/pZLJAEUDtds/s1600/no-image.png",s+="<div class='recentpostel'>",s+="<a href='"+r+"' target='_blank'><img src='"+a+"' /></a>",s+="<h6><a href='"+r+"'>"+n+"</a></h6>",s+="<p>"+arlinafeed(i,charac)+"...</p>",s+="</div>"}document.getElementById("recentpostsae").innerHTML=s,s="",s+=urlprevious?"<a href='javascript:navigasifeed(-1);' class='previous'>Previous</a>":"<span class='noactived previous'>Previous</span>",s+=urlnext?"<a href='javascript:navigasifeed(1);' class='next'>Next</a>":"<span class='noactived next'>Next</span>",s+="<a href='javascript:navigasifeed(0);' class='home'>Home</a>",document.getElementById("recentpostnavfeed").innerHTML=s}function navigasifeed(e){var t,n;-1==e?(t=urlprevious.indexOf("?"),n=urlprevious.substring(t)):1==e?(t=urlnext.indexOf("?"),n=urlnext.substring(t)):n="?start-index=1&max-results="+numfeed+"&orderby=published&alt=json-in-script",n+="&callback=showrecentpostsae",incluirscript(n)}function incluirscript(e){1==startfeed&&removerscript(),document.getElementById("recentpostsae").innerHTML="<div id='recentpostload'></div>",document.getElementById("recentpostnavfeed").innerHTML="";var t=urlblog+"/feeds/posts/default"+e,n=document.createElement("script");n.setAttribute("type","text/javascript"),n.setAttribute("src",t),n.setAttribute("id","arlinalabel"),document.getElementsByTagName("head")[0].appendChild(n),startfeed=1}function removerscript(){var e=document.getElementById("arlinalabel"),t=e.parentNode;t.removeChild(e)}onload=function(){navigasifeed(0)};
+FeaturedPostSide({
+  blogURL: "https://masghiel.blogspot.com",
+  MaxPost: 8,
+  idcontaint: "#featuredpostside",
+  ImageSize: 300,
+  interval: 5000,
+  autoplay: true,
+  tagName: false
+});
 //]]>
 </script>
-<div id="recentpostsae"></div>
-<div id="recentpostnavfeed"></div>
