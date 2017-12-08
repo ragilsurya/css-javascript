@@ -1,0 +1,26 @@
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/ragilsurya/css-javascript/5d5adf3e/sharebutton.css"/>
+<div class="sosmed">
+<ul class="sticky">
+<input id='hideshare' type="checkbox" />
+<li class="share facebook"><span><a expr:href='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:blog.url'><i class="fa fa-facebook-square" aria-hidden="true"></i> <b>Facebook</b></a></span></li>
+<li class="share twitter"><span><a expr:href='&quot;https://twitter.com/intent/tweet?url=&quot; + data:blog.url + &quot;&amp;text=&quot; + data:post.title + &quot;&amp;lang=id&quot;'><i class="fa fa-twitter-square" aria-hidden="true"></i> <b>Twitter</b></a></span></li>
+<li class="share google"><span><a expr:href='&quot;https://plus.google.com/share?url=&quot; + data:blog.url'><i class="fa fa-google-plus-square" aria-hidden="true"></i> <b>Google+</b></a></span></li>
+<li class="openall"><input id='openall' type="checkbox" /><label for="openall" class="switch"><span><i class="fa fa-plus" aria-hidden="true"></i></span></label>
+<ul class="allsosmed">
+<script type="text/javascript">//<![CDATA[var siteurl = window.location.href;document.write('<li class="pinterest"><a href="javascript:pinIt();"><i class="fa fa-pinterest-square" aria-hidden="true"></i> <span>Pinterest</span></a></li>\    <li class="digg"><a href="//www.digg.com/submit?url=' + siteurl + '" target="_blank" title="Share This On Digg"><i class="fa fa-digg" aria-hidden="true"></i> <span>Digg</span></a></li> \    <li class="linkedin"><a href="//www.linkedin.com/shareArticle?mini=true&amp;url=' + siteurl + '" target="_blank" title="Share This On Linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i> <span>Linkedin</span></a></li> \    <li class="stumbleupon"><a href="//www.stumbleupon.com/submit?url=' + siteurl + '&amp;title=' + encodeURIComponent(document.title) + '" target="_blank" title="Share This On Stumbleupon"><i class="fa fa-stumbleupon" aria-hidden="true"></i> <span>Stumbleupon</span></a></li> \    <li class="delicious"><a href="//delicious.com/post?url=' + siteurl + '&amp;title=' + encodeURIComponent(document.title) + '" target="_blank" title="Share This On Delicious"><i class="fa fa-delicious" aria-hidden="true"></i> <span>Delicious</span></a></li> \    <li class="tumblr"><a href="https://www.tumblr.com/share/link?url=' + siteurl + '&name=' + encodeURIComponent(document.title) + '&description=' + encodeURIComponent(document.title) + '" target="_blank" title="Share This On Tumblr"><i class="fa fa-tumblr-square" aria-hidden="true"></i> <span>Tumblr</span></a></li> \');function pinIt() {    var t = document.createElement("script");    t.setAttribute("type", "text/javascript"), t.setAttribute("charset", "UTF-8"), t.setAttribute("src", "https://assets.pinterest.com/js/pinmarklet.js?r=" + 99999999 * Math.random()), document.body.appendChild(t)};//]]>
+</script>
+<div class="login">
+<p>Login</p>
+<form action="https://feedburner.google.com/fb/a/mailverify" method="post" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=digztemplate', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true" target="popupwindow">
+<input class="email" name="email" onblur="if (this.value == &quot;&quot;) {this.value = &quot;Alamat Email&quot;;}" onfocus="if (this.value == &quot;Alamat Email&quot;) {this.value = &quot;&quot;;}" value="Email" type="text" />
+<input name="uri" value="MasTamvan" type="hidden" />
+<input name="loc" value="en_US" type="hidden" />
+<input class="signin" value="Sign In" type="submit" />
+</form>
+</div>
+</ul>
+</li>
+<label for="hideshare" class="switch"><span class="show"></span></label>
+</ul>
+</div>
