@@ -14,31 +14,31 @@ ff02::3 ip6-allhosts
 
 127.0.0.1 local host
 fc00:4444:5555:6666:6666
-  : : 1 ip6 - local host
+:: 1 ip6 - local host
 
 0.0.0.0  loop
-0.0.0.0 .qq.com
-0.0.0.0 .cn
-0.0.0.0 .cnzz.com
-0.0.0.0 .net
-0.0.0.0 .proximabeta.com
-0.0.0.0 .pubgmobile.com
-0.0.0.0 .tencent.com
-0.0.0.0 .umeng.com
-0.0.0.0 .helpshift.com
-0.0.0.0 .userapi.com
-0.0.0.0 .qcloud.com
+0.0.0.0 qq.com
+0.0.0.0 cn
+0.0.0.0 cnzz.com
+0.0.0.0 net
+0.0.0.0 proximabeta.com
+0.0.0.0 pubgmobile.com
+0.0.0.0 tencent.com
+0.0.0.0 umeng.com
+0.0.0.0 helpshift.com
+0.0.0.0 userapi.com
+0.0.0.0 qcloud.com
 169.38.104.194 bgytpubgmh
 0.0.0.0 scgt.reverse.com
-0.0.0.0 .adjust.com
-0.0.0.0 .intellitxt.com
-0.0.0.0 .google-analytics.com
+0.0.0.0 adjust.com
+0.0.0.0 intellitxt.com
+0.0.0.0 google-analytics.com
 0.0.0.0 pay.igamecj.com
 0.0.0.0 hkspeed.igamecj.com
-0.0.0.0 .weiyun.com
-0.0.0.0 .actencent.com
-0.0.0.0 .gclouds.com
-0.0.0.0 .gstatic.com
-0.0.0.0 .googlevideocom
-0.0.0.0 .googleapis.com
-0.0.0.0 .googlesyndication.com
+0.0.0.0 weiyun.com
+0.0.0.0 actencent.com
+0.0.0.0 gclouds.com
+0.0.0.0 gstatic.com
+0.0.0.0 googlevideocom
+0.0.0.0 googleapis.com
+0.0.0.0 googlesyndication.com
